@@ -546,11 +546,11 @@ transform:scale(1.15);
 display:flex;
 gap:20px;
 max-width:100%;
-overflow-x:auto;
 padding-bottom:10px;
 scrollbar-width:none;
 justify-content:center;
 align-items:center;
+flex-wrap:wrap; /* permite quebrar linha */
 }
 
 .links-grid::-webkit-scrollbar{
@@ -599,6 +599,12 @@ color:white;
 padding-top:0px !important;
 
 }
+
+.links-grid{
+flex-direction:column;
+align-items:center;
+}
+
 
 }
 
