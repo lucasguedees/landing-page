@@ -1,6 +1,24 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
 
-body{background:#0f2418;color:#fff}
+
+body{
+background:#0b0f0d;
+color:#ffffff;
+}
+
+/* BASE */
+--black-1: #0b0f0d;
+--black-2: #111715;
+--black-3: #161d1a;
+
+/* VERDE DE DESTAQUE */
+--green-1: #2e5e3e;
+--green-2: #3f7a54;
+--green-light: #6fae88;
+
+/* TEXTO */
+--text-main: #ffffff;
+--text-soft: #b7c4bd;
 
 /* HEADER */
 
@@ -64,11 +82,11 @@ position:absolute;
 inset:0;
 background:linear-gradient(
 to right,
-rgba(15,36,24,1) 0%,
-rgba(15,36,24,.95) 35%,
-rgba(15,36,24,.6) 60%,
-rgba(15,36,24,.2) 80%,
-rgba(15,36,24,0) 100%
+rgba(0,0,0,0.95) 0%,
+rgba(0,0,0,0.85) 40%,
+rgba(0,0,0,0.6) 65%,
+rgba(0,0,0,0.2) 85%,
+rgba(0,0,0,0) 100%
 );
 z-index:1;
 }
@@ -115,7 +133,7 @@ transition:.3s
 
 .section{
 padding:50px 10%;
-background:#0f2418
+background:#111715
 }
 
 .section-title
@@ -152,7 +170,7 @@ background:#436339
 
 .video-section{
 padding:50px 10%;
-background:#1e3a20;
+background:#111715;
 text-align:center
 }
 
@@ -215,9 +233,21 @@ transform:none
 /* MOBILE */
 
 @media(max-width:768px){
-.hero h1{font-size:2rem}
-.menu{flex-wrap:wrap}
-.logo{height:40px}
+
+.hero h1{
+font-size:2rem
+}
+
+.menu{
+flex-wrap:wrap
+}
+
+.logo{
+display:block;
+margin:0 auto 10px auto;
+height:40px
+}
+
 }
 
 /* FIX VIDEO APRESENTAÇÃO */
@@ -431,3 +461,187 @@ section{
 scroll-margin-top:120px;
 }
 
+/* COMPENSA ALTURA DO HEADER NO MOBILE */
+
+@media(max-width:768px){
+
+header{
+justify-content:center;
+}
+
+.hero{
+padding-top:200px !important;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:15px 5%;
+}
+
+/* logo central */
+.logo{
+height:100px;
+margin-bottom:10px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+}
+
+/* ================= HEADER DESKTOP FINAL ================= */
+
+@media(min-width:769px){
+
+header{
+height:100px;
+padding:0 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* logo pequena esquerda */
+
+.logo{
+height:120px;
+margin:0;
+
+}
+
+/* menu direita */
+
+.menu{
+display:flex;
+gap:18px;
+align-items:center;
+}
+
+/* botões mais compactos */
+
+.menu-btn{
+padding:7px 18px;
+font-size:.95rem;
+}
+
+/* botão destaque */
+
+.destaque{
+padding:8px 22px;
+}
+
+/* remove qualquer quebra */
+
+header *{
+flex-shrink:0;
+}
+
+}
+
+.footer-social{
+display:flex;
+justify-content:center;
+gap:18px;
+margin:15px 0;
+}
+
+.footer-social a{
+width:42px;
+height:42px;
+border-radius:50%;
+border:1px solid #436339;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.3s;
+}
+
+.footer-social svg{
+width:20px;
+fill:white;
+}
+
+.footer-social a:hover{
+background:#436339;
+transform:scale(1.15);
+}
+
+/* LINKS IMPORTANTES MODERNOS */
+
+.links-grid{
+display:flex;
+gap:20px;
+max-width:100%;
+overflow-x:auto;
+padding-bottom:10px;
+scrollbar-width:none;
+justify-content:center;
+align-items:center;
+}
+
+.links-grid::-webkit-scrollbar{
+display:none;
+}
+
+.link-card{
+min-width:200px;
+height:100px;
+border-radius:16px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.12);
+backdrop-filter:blur(8px);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:8px;
+text-decoration:none;
+color:white;
+font-weight:500;
+font-size:.95rem;
+transition:.35s ease;
+flex-shrink:0;
+}
+
+.link-card span{
+letter-spacing:.4px;
+}
+
+.link-card:hover{
+background:#436339;
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 12px 30px rgba(0,0,0,.5);
+}
+
+.link-card:hover span{
+color:white;
+}
+
+@media(max-width:768px){
+
+/* LINKS IMPORTANTES MOBILE */
+
+.links-grid{
+flex-direction:column;
+align-items:center;
+justify-content:center;
+overflow:visible;
+}
+
+/* cards ocupam largura boa */
+
+.links-grid .link-card{
+width:90%;
+max-width:320px;
+}
+
+}
