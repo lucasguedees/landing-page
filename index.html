@@ -99,15 +99,55 @@
 </section>
 
 <section id="materiais" class="section animate">
+
 <h2 class="section-title">Materiais de Estudos</h2>
 
+<div class="accordion">
+
+<div class="accordion-item">
+<button class="accordion-header">Polícia Militar (Estados)</button>
+<div class="accordion-content">
 <div class="grid">
-<div class="grid-box">PM/RS</div>
-<div class="grid-box">PM/SC</div>
+
+<div class="grid-box">PM/AC</div>
+<div class="grid-box">PM/AL</div>
+<div class="grid-box">PM/AP</div>
+<div class="grid-box">PM/AM</div>
+<div class="grid-box">PM/BA</div>
+<div class="grid-box">PM/CE</div>
+<div class="grid-box">PM/DF</div>
+<div class="grid-box">PM/ES</div>
+<div class="grid-box">PM/GO</div>
+<div class="grid-box">PM/MA</div>
+<div class="grid-box">PM/MT</div>
+<div class="grid-box">PM/MS</div>
+<div class="grid-box">PM/MG</div>
+<div class="grid-box">PM/PA</div>
+<div class="grid-box">PM/PB</div>
 <div class="grid-box">PM/PR</div>
-<div class="grid-box">CTSP</div>
-<div class="grid-box">Outros concursos</div>
+<div class="grid-box">PM/PE</div>
+<div class="grid-box">PM/PI</div>
+<div class="grid-box">PM/RJ</div>
+<div class="grid-box">PM/RN</div>
+<div class="grid-box">PM/RS</div>
+<div class="grid-box">PM/RO</div>
+<div class="grid-box">PM/RR</div>
+<div class="grid-box">PM/SC</div>
+<div class="grid-box">PM/SP</div>
+
 </div>
+</div>
+</div>
+
+<!-- BOTÕES SIMPLES -->
+
+<div class="grid materiais-botoes">
+
+<div class="grid-box">CTSP</div>
+<div class="grid-box">Outros Concursos</div>
+
+</div>
+
 </section>
 
 <section id="simulados" class="section animate">
@@ -179,6 +219,17 @@ if(e.isIntersecting){e.target.classList.add("show")}
 })
 })
 document.querySelectorAll(".animate").forEach(el=>observer.observe(el))
+document.addEventListener("DOMContentLoaded", function () {
+
+document.querySelectorAll(".accordion-header").forEach(btn => {
+
+btn.addEventListener("click", () => {
+btn.parentElement.classList.toggle("active");
+});
+
+});
+
+});
 </script>
 
 </body>
