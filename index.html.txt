@@ -1,0 +1,51 @@
+<section class="hero">
+    <h2>DEDICAÇÃO MILITAR</h2>
+    <p>Vou te mostrar o caminho para ser aprovado nos concursos da Polícia Militar em menos de um ano.</p>
+</section>
+
+<section>
+    <h2 class="section-title">MENTORIAS INDIVIDUALIZADAS</h2>
+
+    <div class="grid">
+        <div class="grid-box"><strong>CTSP</strong><br>Brigada Militar</div>
+        <div class="grid-box"><strong>PM/RS</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/SC</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/PR</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>Outros</strong><br>Concurso</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">MATERIAIS DE ESTUDOS</h2>
+
+    <div class="grid">
+        <div class="grid-box"><strong>PM/RS</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/SC</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/PR</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>CTSP</strong><br>Brigada Militar</div>
+        <div class="grid-box"><strong>Outros</strong><br>Concurso</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">SIMULADOS</h2>
+
+    <div class="grid">
+        <div class="grid-box"><strong>PM/RS</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/SC</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>PM/PR</strong><br>Polícia Militar</div>
+        <div class="grid-box"><strong>CTSP</strong><br>Brigada Militar</div>
+        <div class="grid-box"><strong>Outros</strong><br>Concurso</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">LINKS IMPORTANTES</h2>
+
+    <div class="grid">
+        <a class="grid-box link" href="#">Editais e Provas</a>
+        <a class="grid-box link" href="#">Grupo de Estudos</a>
+        <a class="grid-box link" href="#">Minissimulado</a>
+        <a class="grid-box link" href="#">YouTube</a>
+    </div>
+</section>
